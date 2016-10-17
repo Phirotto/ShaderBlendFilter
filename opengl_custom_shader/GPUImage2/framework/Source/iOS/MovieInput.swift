@@ -181,8 +181,8 @@ open class MovieInput: ImageSource {
             let currentFrameTime = (CFAbsoluteTimeGetCurrent() - startTime)
             self.numberOfFramesCaptured += 1
             self.totalFrameTimeDuringCapture += currentFrameTime
-            print("Average frame time : \(1000.0 * self.totalFrameTimeDuringCapture / Double(self.numberOfFramesCaptured)) ms")
-            print("Current frame time : \(1000.0 * currentFrameTime) ms")
+//            print("Average frame time : \(1000.0 * self.totalFrameTimeDuringCapture / Double(self.numberOfFramesCaptured)) ms")
+//            print("Current frame time : \(1000.0 * currentFrameTime) ms")
         }
     }
 

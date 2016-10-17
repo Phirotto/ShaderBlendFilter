@@ -46,8 +46,8 @@ open class MaskGenerator: ImageGenerator {
         maskShader = crashOnShaderCompileFailure("LineGenerator"){try sharedImageProcessingContext.programForVertexShader(MaskPositionVertexShader, fragmentShader:MaskPositionFragmentShader)}
         super.init(size:size)
         
-        ({lineWidth = 1.0})()
-        ({lineColor = Color.red})()
+        ({lineWidth = 20.0})()
+        ({lineColor = Color.white})()
     }
     
     open func positionMask(_ lines:[Line]) {
